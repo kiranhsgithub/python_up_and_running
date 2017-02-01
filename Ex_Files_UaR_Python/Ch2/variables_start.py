@@ -5,7 +5,7 @@
 f = 0;
 print(f)
 
-f = "abc"
+f = "original"
 print(f)
 
 #print("String type " + 123)
@@ -13,7 +13,19 @@ print(f)
 print("String type " + str(123))
 
 def someFunction():
-    f = "def"
-    print f
+    f = "someFunction"
+    print(f)
+
+def someOtherFunction():
+    global f
+    f = "someOtherFunction"
+    print(f)
     
-    
+someFunction()
+someOtherFunction()
+print(f)
+
+del f
+#uncomment below to see error
+#print(f)
+     
