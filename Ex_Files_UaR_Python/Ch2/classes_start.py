@@ -20,6 +20,7 @@ def main():
     c2 = anotherClass()
     c2.method1()
     c2.method2()
+    c2.method2("another String")
 
   
 if __name__ == "__main__":
